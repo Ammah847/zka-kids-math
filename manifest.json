@@ -1,0 +1,11 @@
+{
+  "name": "ZKA Kids Math",
+  "short_name": "ZKA Math",
+  "description": "Learn mathematics with Zie Koutaptou Amamatou.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e0f2fe",
+  "theme_color": "#6366f1",
+  "orientation": "portrait"
+}

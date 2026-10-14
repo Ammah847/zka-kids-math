@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZKA kids math</title>
+    <link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#6366f1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>ZKA kids math</h1>
+        <p>created by zie koutaptou Amamatou</p>
+    </header>
+    <main class="container">
+        <h2 id="welcomeTitle">Welcome, young mathematician! 🎉</h2>
+
+<p id="welcomeText">Choose a calculation to practise.</p>
+
+<div class="language-selector">
+    <label for="languageSelect">🌍 Choose your language:</label>
+
+    <select id="languageSelect" onchange="setLanguage(this.value)">
+        <option value="en">EG English</option>
+        <option value="fr">Fr Français</option>
+    </select>
+</div>
+        <h3>🎯 Choose Your Level</h3>
+
+<div class="menu"  id="difficultyMenu">
+    <button onclick="setDifficulty('easy')">
+        🐱‍🏍 Easy
+    </button>
+
+    <button onclick="setDifficulty('medium')">
+        🙌 Medium
+    </button>
+
+    <button onclick="setDifficulty('hard')">
+        🔴 Hard
+    </button>
+</div>
+
+<p id="difficultyLabel">Current Level: Easy</p>
+        <div class="menu" id="operationMenu">
+            <button onclick="startGame('addition')">➕ Addition</button>
+
+<button onclick="startGame('subtraction')">➖ Subtraction</button>
+
+<button onclick="startGame('multiplication')">✖️ Multiplication</button>
+
+<button onclick="startGame('division')">➗ Division</button>
+        </div>
+        <section class="quiz">
+            <h2 id="question">Your question will appear here!</h2>
+
+<div class="sound-controls">
+    <button type="button" onclick="readQuestion()">
+        🔊 Read Question
+    </button>
+
+    <button type="button" onclick="toggleSound()" id="soundButton">
+        🔔 Sound: ON
+    </button>
+</div>
+            <input type="number" id="answer" placeholder=" type your answer">
+            <button onclick="checkAnswer()">Check Answer ✔</button>
+            <p id="feedback"></p>
+            <p>🎁✨score: <span id="score">0</span></p>
+            <p>🌟 Stars: <span id="stars">0</span></p>
+
+<p id="achievement">
+    🎯 Keep practising to earn your first reward!
+</p>
+        </section>
+    </main>
+    <footer>
+        <p>learn🔑 practise🔑 succeed🏆</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
